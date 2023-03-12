@@ -8,6 +8,9 @@
 @import './components/status-bar.css';
 @import './components/no-mobile.css';
 
+/* screens */
+@import './screens/directs.css';
+
 body {
   background-image: url(../img/wallpaper.png);
   background-size: cover;
@@ -47,7 +50,7 @@ body {
   height: 38px;
   position: absolute;
   top: -24px;
-  left: 90px;
+  left: 68px;
 }
 
 .welcome-header h1 {
@@ -58,48 +61,66 @@ body {
 }
 
 .welcome-header img {
-  width: 347px;
-  height: 356px;
+  width: 300px;
+  height: 300px;
   margin-top: 18px;
   margin-bottom: 20px;
 }
 
 .welcome-header h3,
 .welcome-header h4,
-#login-form input {
+#login-form input,
+#login-form label {
   color: white;
 }
 
 .welcome-header h3 {
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .welcome-header h4 {
   opacity: 50%;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 12px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #login-form {
+  width: 347px;
   display: flex;
   flex-direction: column;
 }
 
+#login-form label,
+#login-form a {
+  font-size: 12px;
+}
+
+#login-form label {
+  opacity: 50%;
+  margin-bottom: 8px;
+}
+
 #login-form input {
-  width: 347px;
   height: 43px;
   border-radius: 4px;
   font-weight: 700;
 }
 
-#login-form input:first-child {
-  background-color: #5865f2;
-  margin-bottom: 16px;
+.username,
+.password {
+  background-color: #1e1f21;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+
+#login-form a {
+  color: #10a8f2;
+  margin-bottom: 12px;
 }
 
 #login-form input:last-child {
-  background-color: #40434a;
+  background-color: #5865f2;
 }
