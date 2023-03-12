@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- status bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>12:34</span>
+      </div>
+
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- header -->
+      <header class="welcome-header">
+        <h1>돌아오신 것을 환영해요!</h1>
+        <h4>다시 만나다니 너무 반가워요!</h4>
+
+        <!-- form -->
+        <form action="friends.html" method="get" id="login-form">
+          <label for="username">이메일 또는 전화번호</label>
+          <input name="username" type="text" class="username" />
+          <label for="password">비밀번호</label>
+          <input name="password" type="password" class="password" />
+
+          <a href="#">비밀번호를 잊으셨나요?</a>
+
+          <input type="submit" value="로그인" class="submit" />
+
+          <h6>계정이 필요한가요?</h6>
+          <a href="#" class="signup">가입하기</a>
+        </form>
+      </header>
+
+      <div class="qr-code">
+        <div class="qr-code__img"></div>
+        <h3>QR 코드로 로그인</h3>
+        <h4>Discord 모바일 앱으로 스캔해 바로 로그인하세요.</h4>
+      </div>
+    </div>
+
+    <!-- mediaquery -->
+    <div id="no-mobile">
+      <span>화면이 너무 커요 :(</span>
+    </div>
+
+    <!-- kits -->
+    <script
+      src="https://kit.fontawesome.com/2148b3ea36.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
