@@ -3,12 +3,15 @@
 
 /* reset */
 @import 'reset.css';
+@import 'variable.css';
 
 /* components */
 @import './components/status-bar.css';
 @import './components/no-mobile.css';
+@import './components/nav-bar.css';
 
 /* screens */
+@import './screens/login.css';
 @import './screens/directs.css';
 
 body {
@@ -22,105 +25,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* index.html */
-.container {
-  width: 347px;
-  height: 753px;
-  background-color: #303337;
-  border-radius: 22px;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 20px 0 20px;
-}
-
-.welcome-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.welcome-header img:first-child {
-  width: 48px;
-  height: 38px;
-  position: absolute;
-  top: -24px;
-  left: 68px;
-}
-
-.welcome-header h1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #5865f2;
-  margin-left: 60px;
-}
-
-.welcome-header img {
-  width: 300px;
-  height: 300px;
-  margin-top: 18px;
-  margin-bottom: 20px;
-}
-
-.welcome-header h3,
-.welcome-header h4,
-#login-form input,
-#login-form label {
-  color: white;
-}
-
-.welcome-header h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.welcome-header h4 {
-  opacity: 50%;
-  font-size: 12px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#login-form {
-  width: 347px;
-  display: flex;
-  flex-direction: column;
-}
-
-#login-form label,
-#login-form a {
-  font-size: 12px;
-}
-
-#login-form label {
-  opacity: 50%;
-  margin-bottom: 8px;
-}
-
-#login-form input {
-  height: 43px;
-  border-radius: 4px;
-  font-weight: 700;
-}
-
-.username,
-.password {
-  background-color: #1e1f21;
-  padding-left: 10px;
-  margin-bottom: 8px;
-}
-
-#login-form a {
-  color: #10a8f2;
-  margin-bottom: 12px;
-}
-
-#login-form input:last-child {
-  background-color: #5865f2;
 }
