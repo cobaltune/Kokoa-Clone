@@ -66,6 +66,22 @@ header {
 }
 
 /* 친구 찾기 */
+@keyframes mobileAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.search-friend__info:first-child {
+  animation: mobileAnimation 4s ease-in-out infinite;
+}
+
 .search-friend {
   width: 307px;
   color: white;

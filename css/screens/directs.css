@@ -11,6 +11,22 @@
   position: relative;
 }
 
+@keyframes messageAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.hamburger__btn:first-child i {
+  animation: messageAnimation 1.5s ease-in-out infinite;
+}
+
 .hamburger {
   width: 70px;
   height: 100%;
