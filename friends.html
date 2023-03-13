@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container-c">
+      <!-- status bar -->
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>12:34</span>
+        </div>
+
+        <div class="status-bar__column">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full fa-lg"></i>
+        </div>
+      </div>
+
+      <!-- header -->
+      <header>
+        <div class="header__row"></div>
+        <div class="header__row">
+          <h1>친구</h1>
+        </div>
+        <div class="header__row">
+          <i class="fa-solid fa-message"></i>
+          <span>+</span>
+          <i class="fa-solid fa-user"></i>
+          <span>+</span>
+          <i class="fa-solid fa-mobile"></i>
+          <span>+</span>
+        </div>
+      </header>
+
+      <!-- 친구 찾기 -->
+      <div class="search-friend">
+        <div class="search-friend__info">
+          <img src="./img/chat.png" alt="mobile icon" />
+        </div>
+
+        <div class="search-friend__info">
+          <h3>친구 찾기</h3>
+          <h4>연락처를 동기화하고 채팅을 시작하세요.</h4>
+        </div>
+
+        <div class="search-friend__info">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <!-- 온라인 -->
+      <div class="online">
+        <h4>온라인 ㅡ 3명</h4>
+
+        <div class="online__column">
+          <div class="online__row online__row__avatar">
+            <img src="./img/logo.png" alt="avatar" />
+          </div>
+
+          <div class="online__row">
+            <h3>국이짱짱</h3>
+            <h4>온라인</h4>
+          </div>
+
+          <div class="online__row">
+            <span><i class="fa-solid fa-phone-volume"></i></span>
+            <span><i class="fa-solid fa-message"></i></span>
+          </div>
+        </div>
+
+        <div class="online__column">
+          <div class="online__row online__row__avatar">
+            <img src="./img/logo.png" alt="avatar" />
+          </div>
+
+          <div class="online__row">
+            <h3>도라방스</h3>
+            <h4>온라인</h4>
+          </div>
+
+          <div class="online__row">
+            <span><i class="fa-solid fa-phone-volume"></i></span>
+            <span><i class="fa-solid fa-message"></i></span>
+          </div>
+        </div>
+
+        <div class="online__column">
+          <div class="online__row online__row__avatar">
+            <img src="./img/logo.png" alt="avatar" />
+          </div>
+
+          <div class="online__row">
+            <h3>따봉에미친남자</h3>
+            <h4>온라인</h4>
+          </div>
+
+          <div class="online__row">
+            <span><i class="fa-solid fa-phone-volume"></i></span>
+            <span><i class="fa-solid fa-message"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- navigation bar -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <a class="nav__link" href="directs.html"
+              ><img src="./img/logo.png" alt="directs"
+            /></a>
+          </li>
+
+          <li class="nav__btn">
+            <a class="nav__link" href="#"><i class="fas fa-user fa-xl"></i> </a>
+          </li>
+
+          <li class="nav__btn">
+            <a class="nav__link" href="#"
+              ><i class="fa-solid fa-bell fa-xl"></i
+            ></a>
+          </li>
+
+          <li class="nav__btn">
+            <a class="nav__link" href="#">
+              <span class="nav__circle smbadge"></span>
+              <i class="fas fa-ellipsis-h fa-xl"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- splash-screen -->
+    <div id="splash-screen">
+      <img src="./img/logo.png" />
+    </div>
+
+    <!-- mediaquery -->
+    <div id="no-mobile">
+      <span>화면이 너무 커요 :(</span>
+    </div>
+
+    <!-- kits -->
+    <script
+      src="https://kit.fontawesome.com/2148b3ea36.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
