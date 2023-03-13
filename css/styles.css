@@ -13,6 +13,7 @@
 /* screens */
 @import './screens/login.css';
 @import './screens/directs.css';
+@import './screens/friends.css';
 
 body {
   background-image: url(../img/wallpaper.png);
