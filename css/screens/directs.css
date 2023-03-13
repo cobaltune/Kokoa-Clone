@@ -1,15 +1,24 @@
-.container {
+.container-b {
+  width: 347px;
+  height: 753px;
+  background-color: #303337;
+  border-radius: 22px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0 20px;
   position: relative;
 }
 
 .hamburger {
   width: 70px;
-  height: 648px;
+  height: 100%;
+  box-sizing: border-box;
   margin-top: -20px;
-  padding: 120px 5px 5px 5px;
+  padding: 0px 5px 5px 5px;
   display: flex;
   justify-content: center;
-  text-align: center;
   background-color: var(--dark);
   position: absolute;
   left: 0px;
@@ -32,6 +41,7 @@
 .hamburger__btn:first-child {
   border-radius: 12px;
   background-color: var(--main-color);
+  margin-top: 50px;
 }
 
 .hamburger__btn img {
@@ -42,10 +52,17 @@
 
 .hamburger__btn a {
   font-size: 12px;
+  height: 100%;
 }
 
 .hamburger__btn .fa-plus {
   color: #3ba55b;
+}
+
+.hamburger__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* direct */
@@ -58,6 +75,7 @@ main {
 main h3 {
   font-weight: 700;
   margin-bottom: 16px;
+  margin-top: 40px;
 }
 
 main input {
@@ -70,7 +88,7 @@ main input {
 main i {
   position: absolute;
   right: 10px;
-  top: 40px;
+  top: 80px;
   opacity: 50%;
 }
 
@@ -86,8 +104,29 @@ main i {
   height: 35px;
   border-radius: 50%;
   margin-right: 16px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-component__column:first-child .user-component__avatar {
   background-color: #ee4246;
+}
+
+.user-component__column:nth-child(2) .user-component__avatar {
+  background-color: #3ab9b9;
+}
+
+.user-component__column:nth-child(3) .user-component__avatar {
+  background-color: #f9a61a;
+}
+
+.user-component__column:nth-child(4) .user-component__avatar {
+  background-color: #ec459f;
+}
+
+.user-component__column:last-child .user-component__avatar {
+  background-color: #3ba55b;
 }
 
 .user-component__avatar img {
