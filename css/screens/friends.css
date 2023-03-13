@@ -162,8 +162,24 @@ header {
   align-items: center;
 }
 
-.online__row__avatar:first-child {
+.online__column:nth-of-type(1) .online__row__avatar {
   background-color: #ee4246;
+}
+
+.online__column:nth-of-type(2) .online__row__avatar {
+  background-color: #f9a61a;
+}
+
+.online__column:nth-of-type(3) .online__row__avatar {
+  background-color: #ec459f;
+}
+
+.offline__column:nth-of-type(1) .online__row__avatar {
+  background-color: #3ab9b9;
+}
+
+.offline__column:nth-of-type(2) .online__row__avatar {
+  background-color: #3ba55b;
 }
 
 .online__row img,
