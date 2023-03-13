@@ -24,20 +24,26 @@
       </div>
 
       <!-- header -->
-      <header>
-        <div class="header__row"></div>
-        <div class="header__row">
+      <header class="alarm">
+        <div class="alarm__column">
           <h1>알림</h1>
+          <i class="fa-solid fa-ellipsis"></i>
         </div>
-        <div class="header__row">
-          <i class="fa-solid fa-message"></i>
-          <span>+</span>
-          <i class="fa-solid fa-user"></i>
-          <span>+</span>
-          <i class="fa-solid fa-mobile"></i>
-          <span>+</span>
+
+        <div class="alarm__column">
+          <span>나의 알림</span>
+          <span>멘션</span>
         </div>
       </header>
+
+      <!-- 나의 알림 -->
+      <div class="snail-wrap">
+        <div class="snail">
+          <img src="./img/snail.png" alt="snail" />
+          <h3>아직 아무것도 없어요</h3>
+          <h4>나중에 돌아와서 이벤트, 스트림 등의 알림을 확인하세요.</h4>
+        </div>
+      </div>
 
       <!-- navigation bar -->
       <nav class="nav">
@@ -61,7 +67,7 @@
           </li>
 
           <li class="nav__btn">
-            <a class="nav__link" href="#">
+            <a class="nav__link" href="more.html">
               <span class="nav__circle smbadge"></span>
               <i class="fas fa-ellipsis-h fa-xl"></i
             ></a>
